@@ -1,0 +1,80 @@
+/* This is a CSS comment */
+body {
+	padding: 40px 30px;
+	font-family: Arial;
+	max-width: 1700px;
+	margin: 10px auto; /* auto The 10 refers to the top and bottom margins and the "auto" automatically */
+	font-size: 1.2em; /* sets the left and right margins to equal values. This centers the body on the page.*/
+}  
+               
+h1 {
+	text-align: center;
+	color: #400000;
+}
+
+p {
+	margin: 30px 30px;
+}
+
+h2 {
+	margin: 10px;
+}
+
+.section {
+	background-color: #404040;
+	border-radius: 30px;
+	color: white;
+	padding: 20px;
+	margin: 20px auto; 
+}
+
+
+ul {
+	list-style-type: none; /* this removes the bullets that show up by default in unordered lists */
+}
+
+li {
+	font-size: 17px;
+	line-height: 44px; /* each line of text should occupy 44 pixels of height (good for mobile usage and fat fingers) */
+}
+
+
+
+.concept {
+	background-color: #ffffc0;
+	padding-left: 50px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 15px;
+	border-radius: 8px;
+	color: #400000;
+}
+
+.concept-title {
+	font-size: 24px;
+	margin: 15px;
+	text-align: center;
+	color: #400000;
+}
+
+.concept-description {
+	font-weight: lighter;
+	margin: 30px;
+}
+
+
+
+
+.code {
+	font-family: Courier;
+	color : black;
+	font-weight: bold;
+	padding-left:  4px;
+	padding-right: 4px;
+}			 
+
+.bold {
+	font-family: Helvetica;
+	font-weight: bold;
+}

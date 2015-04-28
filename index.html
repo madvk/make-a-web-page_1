@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <!-- This line is an HTML comment. -->
+    <!-- These notes only include key personal take-aways and new information that I wanted to jot down during the Udacity course lessons. They contain text copied from the course material. A few definitions and concepts are also copied from the Mozilla Deeveloper Network reference pages -->
+    <!-- have retained some of Andy's notes which added to my take-aways. -->
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Notes_Madhavi Kuppachi</title>
+    <link rel="stylesheet" href="madhavi-style.css">
+  </head>
+
+  <!-- The <h1> tag stands for "heading 1". Heading tags go all the way up to <h6>. Lower numbered headings indicate content that is more important. -->
+   <!-- The <head> element contains information that won't be displayed on the page. -->
+  <!-- The <title> element normally sets the name of the browser tab. -->
+
+  <body>
+    <div class="TOC">
+      <h1>Table of Contents</h1>
+      <ol>
+        <li class="TOC-section"><a href="#section1">Section 1: Web basics and HTML basics</a>
+          <ul>
+            <li><a href="#section-1.1">The computer and the Web</a></li>
+            <li><a href="#section-1.2">HTML</a></li>
+            <li><a href="#section-1-3">Tags and Elements</a></li>
+            <li><a href="#section-1.4">Need to note about Computers</a></li>
+            <li><a href="#section-1.5">Inline vs Block Elements</a></li>
+          </ul>
+        </li>
+        <li class="TOC-section"><a href="#section2">Section 2: Creating a Structured Document with HTML and CSS</a>
+          <ul>
+            <li><a href="#section-2.1">Visualising concepts of 'Structure' and 'Style'</a></li>
+            <li><a href="#section-2.2">Tree-like Structure of HTML</a></li>
+            <li><a href="#section-2.3">Boxes and Indentations</a></li>
+            <li><a href="#section-2.4">A note on Programming Text Editors</a></li>
+          </ul>
+        </li>
+        <li class="TOC-lesson"><a href="#section3">Section 3: Adding CSS Style to HTML Structure</a>
+         <ul>
+            <li><a href="#section-3.1">How to include CSS Styling in a web page</a></li>
+            <li><a href="#section-3.2">Avoiding Repetition by using CSS</a></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+
+<h1>Important Concepts</h1>
+
+  <div class="section">
+  <h2 id="section1">Section 1: Web basics and HTML basics</h2>
+
+
+    <div class="concept" id="section-1.1">
+      <div class="concept-title">
+        The computer and the Web
+      </div>
+      <div class="concept-description">
+        <p>
+         One can tell a computer what to do by writing <em>text</em> that it can understand. The web is a bunch of computers that communicate with each other. When a user goes to a web page, their computer sends a HTTP Request to a server. The server finds the appropriate HTML document and sends it back to the user's computer where a web browser interprets the page and displays it on the user's screen. 
+         <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496"> This video</a>
+         explains completely.
+        </p>
+      </div>    
+    </div>
+  
+    <div class="concept" id="section-1.2">
+      <div class="concept-title">
+        HTML
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML stands for <span class="bold">Hypertext Markup Language.</span><br>
+          HTML is made up of:<br>
+          - Text: written content<br>
+          - <em>Markup</em> or what the text looks like; (markup is used to make it look different)<br>
+          - May have references to other files, say images or videos<br>
+          - May have <em>links</em> to other pages
+        </p>
+        <p>  
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340"> This video</a> gives a good basic overview of HTML.
+        </p>
+      </div>
+    </div>
+  
+    <div class="concept" id="section-1.3">
+      <div class="concept-title">
+        Tags and Elements
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML documents are made of HTML <em>elements</em>. When writing HTML, we tell browsers the type of each element by using HTML <em>tags</em>.<br>
+          HTML tags are shown in angled brackets. Most consist of an opening tag and a closing tag. Some do not have a closing tag and are called <em>void tags.</em><br>
+          Everything within a set of opening and closing tags is an element.
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">This video</a> explains this in detail, including the distinction between these and the concept of an <em>attribute</em> as well.
+        </p>
+      </div>
+    </div>
+
+    <div class="concept" id="section-1.4">
+      <div class="concept-title">
+        Need to note about Computers
+      </div>
+      <div class="concept-description">
+        <p>
+          Computers interpret instructions literally, and need to be told everything clearly and exactly. Programmers need to write exactly the way a computer understands, that is they need to <em>write with correct syntax.</em> A small mistake by a programmer can cause huge problems in a computer program.
+        </p>
+      </div>
+    </div>
+
+    <div class="concept" id="section-1.5">
+      <div class="concept-title">
+        Inline vs Block Elements
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML elements are either <em>inline</em> or <em>block</em>. Block elements form an <span class="bold">"invisible box"</span> around the content inside of them. More on the <em>box</em> structure in the next section.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    
+
+  <div class="section">
+    <h2 id="section2">Section 2: Creating a Structured Document with HTML</h2>
+    <div class="concept" id="section-2.1">
+      <div class="concept-title">
+        Visualising concepts of 'Structure' and 'Style'
+      </div>
+      <div class="concept-description">
+        <p>
+          Why Front-end web development is good to start programming with because:<br>
+          - Its fun<br>
+          - Its inherently visual: result immediately visible in browser<br>
+          - One can get immediate feedback using it, and can share work with others
+        </p>
+        <p>
+          HTML and CSS are both languages. If one thinks of a website as a house, <em>HTML</em> defines the structure of the house. <em>CSS</em> defines the style of the house. <em>Javascript</em> adds interactive components changing some elements of the house. It can be thought to make things within this house move or be automated.<br>
+          Each of these have rules that define how web-sites behave. In addition, various tools can be used as well to help build a website, similar to building a house.<br>
+        </p>
+        <p>
+          To recap:<br>
+          <span class="bold">HTML: HyperText Markup Language</span> - the standard markup language used to create web pages.<br>
+          <span class="bold">CSS: Cascading Style Sheets</span> - style sheet language used for describing the look and formatting of a document written in a markup language.<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="concept" id="section-2.2">
+      <div class="concept-title">
+        Tree-like Structure of HTML
+      </div>
+      <div class="concept-description">
+        <p>
+          When we see the structure of a web page:<br>
+          - Not all observable elements in the structure are visible on the page<br>
+          - Every element takes up a rectangular space on page<br>
+          - By going deep enough into the page structure, one can find all the text visible on the page
+        </p>
+        <p>
+          This structure of a web page is referred to as a <span class="bold">Tree-like structure</span>. The "tree-like structure" comes from the fact that HTML elements can have other elements inside of them. This relationship can be drawn like a family tree. In a browser, this structure shows up as a series of nested boxes. There are boxes inside of boxes inside of boxes, and so on. When programmers talk about the <span class="bold">DOM (document object model)</span>, they are talking of the tree-like structure of the web page.
+        </p>
+        <p>
+          DOM - Document Object Model - a cross-platform and language-independent convention for representing and interacting with objects in HTML (and other markup languages).<br>
+          The nodes of every document are organized in a tree structure, <span class="bold">called the DOM tree.</span>
+        </p>
+        <p>
+          HTML is a language with syntax and rules. The basic compoments of HTML, the <em>tags</em> make up the elements in the tree, which the browser reads from the DOM to display on the webpage.
+        </p>
+      </div>
+    </div>
+
+    <div class="concept" id="section-2.3">
+      <div class="concept-title">
+       Boxes and Indentation
+      </div>
+      <div class="concept-description">
+        <p>
+          Container elements (<span class="code">span</span> and <span class="code">div</span>) are used to group related content together on a web page. Everything on a web page is actually a <span class="bold">rectangular BOX</span>. These boxes can be considered to be arranged on an underlying grid on the page. Boxes can be defined using the <span class="code">div</span> tag. They can have labels to specify location on the page; can also have class names to define purpose.
+        </p>
+        <p>    
+          HTML structure is indented to make it easy to read. When we read an HTML document as <em>text</em>, we see a wave of changing indentations going up and down the left side of the document. The more indented an element is, the more deeply nested it's corresponding "box" is.
+        </p>
+      </div>
+    </div>
+
+    <div class="concept" id="section-2.4">
+      <div class="concept-title">
+        A Note on Programming Text Editors
+      </div>
+      <div class="concept-description">
+        <p>
+          When writing code, programmers use special text editors (for instance, Sublime Text). These editors make the programmer's life easier. For example, some text editors will automatically generate a closing HTML tag when you write an opening tag. Technically, a plain-text editor such as Notepad can also be used, as long as the file name ends in .html. But Notepad is typically meant for writing documents for reading, and is not designed for writing computer code. It does not have the features and ease of use provided by a programming text editor.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 id="section3">Section 3: Adding CSS Style to HTML Structure</h2>
+    <div class="concept" id="section-3.1">
+      <div class="concept-title">
+        How to include CSS Styling in a web page
+      </div>
+      <div class="concept-description">
+        <p>
+          CSS enables styling, such as various font sizes and border widths, on the web page. CSS is code written to control the <em>style</em> of HTML elements. There can be several CSS sheets linked to an html file. The HTML file tells the browser where to find the related style to apply - the link to the CSS <span class="code">style</span> file is included in the <span class="code">head</span> tag of the html.
+        </p>
+        <p>
+          There are three ways to include CSS styling in a webpage:<br>
+        </p>
+        <p>
+          Method 1: write CSS in the <span class="code">head</span> of your HTML. This method is good for very small projects. At the top of your HTML document, add a <span class="code">head</span> element. Inside the <span class="code">head</span> element, add a <span class="code">style</span> element. Write your CSS in the <span class="code">style</span> element and then put the HTML for the rest of your page below.
+        </p>
+        <p>
+          Method 2: Link your HTML to a separate CSS file. This adds another step, but it lets you stay more organized when working on larger projects.<br>
+          Write all of your structural HTML in one file (lets call it <span class="code">main.html</span>). In a separate file (let's call it <span class="code">main.css</span>), put all of your CSS code. Add a <span class="code">head</span> element to the top of your HTML. Add a <span class="code">link</span> tag inside the <span class="code">head</span> element. Since link is a "void tag" you don't need to add a closing link. Add the following attributes to your link: <span class="code">* rel="stylesheet" * type="text/css" * href="main.css"</span>
+        </p>
+        <p>
+          Method 3: Write your style inline with your HTML. This is generally a very bad idea because it leads to lots of repeated code. You basically modify the style attributes of every individual HTML element. 
+        </p>
+      </div>
+    </div>
+
+    <div class="concept" id="section-3.2">
+      <div class="concept-title">
+        Avoiding Repetition by using CSS
+      </div>
+      <div class="concept-description">
+        <p>
+          To recall, CSS stands for <span class="bold">"Cascading Style Sheets"</span>. <em>Cascading</em> refers to going down the style code till the specific rule for the element is found. The most specific rules defined for a particular element are the ones that apply.
+        </p>
+        <p>
+          <span class="bold">Inheritance</span> is another key feature in CSS. It relies on the ancestor-descendant relationship in the page structure, to operate. Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants. Inheritance relies on the document tree of HTML elements in a page. Descendant elements may inherit CSS property values from any ancestor element enclosing them.<br>
+          In general, descendant elements inherit text-related properties, but box-related properties are not inherited.
+        </p>
+        <p>
+          <em>Cascading and Inheritance</em> prevent certain properties from being declared over and over again in a style sheet, allowing the software developers to write less CSS. This enhances faster-loading of web pages by users and enables the clients to save money on bandwidth and development costs. <span class="bold">Avoiding Repetition</span> is a very useful benefit of using CSS effectively.
+        </p>
+        <p>
+         <em>Avoiding repetition</em> is important also for:
+        </p>
+        <p>
+          <span class="bold">Avoiding Errors:</span> When programmers <em>don't</em> avoid repetition, they will often have to do the same thing over and over. This may mean copy and pasting certain style attributes into many HTML elements or rewriting the same code (sometimes with minor differences) many times. This can lead to errors when the programmer decides to make a change to something. If they don't dilligently make that same change everywhere that the repeated code appears, problems will arise.
+        </p>
+        <p>
+          <span class="bold">Consistency:</span> In order for each section in a web page to look the same, manually giving each one the same style is not efficient or error-proof. Instead, each section <span class="code">div</span> can be given the same <span class="code">class</span> and then the style for that class can be specified in only one place. By avoiding repetition, it's now very easy to make changes to this standard style.
+        </p>
+        <p>
+          To sum, the advantages for having a different css file are:<br>
+          - Easy to maintain your html page<br>
+          - Change to the Look and feel will be easy and you can have support for many themes on your pages<br>
+          - Your css file will be cached on the browser side. So you will contribute a little on internet traffic by not loading some kbs of data every time the page is refreshed or user navigates your site.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
